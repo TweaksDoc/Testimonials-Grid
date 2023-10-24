@@ -1,0 +1,139 @@
+/*===========================*/
+body {
+  background-color: #ecf2f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px;
+}
+/*===========================*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  grid-template-rows: repeat(2, 260px);
+  gap: 30px;
+}
+/*===========================*/
+.Box {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  padding-top: 50px;
+  justify-content: center;
+}
+/*---------------------------*/
+.box1 {
+  background-color: #7541c8;
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 360px 0px;
+  background-blend-mode: lighten;
+  grid-column: span 2;
+}
+.box2 {
+  background-color: #48556a;
+}
+.box3 {
+  background-color: white;
+  grid-row: span 2;
+}
+.box4 {
+  background-color: white;
+}
+.box5 {
+  background-color: #19212e;
+  grid-column: span 2;
+}
+/*===========================*/
+.person {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+/*---------------------------*/
+.avatar {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 2px solid hsla(210, 46%, 95%, 0.479);
+}
+.box5 > .person > .avatar {
+  border: 2px solid #7541c8;
+}
+/*---------------------------*/
+.nametag {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  margin-left: 15px;
+}
+.name {
+  font-size: 12px;
+  color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  margin: 0px;
+}
+.status {
+  font-size: 10px;
+  color: hsl(0, 0%, 81%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  opacity: 0.5;
+  margin: 0px;
+  margin-top: 2px;
+}
+/*===========================*/
+.title {
+  font-size: 20px;
+  color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  object-fit: contain;
+  height: 100%;
+  margin-bottom: 0px;
+}
+.content {
+  font-size: 13px;
+  color: hsl(0, 0%, 81%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  opacity: 0.7;
+  object-fit: contain;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+.white .content {
+  color: #48556a;
+}
+.white .title {
+  color: #48556a;
+}
+.white .name {
+  color: #48556a;
+}
+.white .status {
+  color: #48556a;
+}
+/*===========================*/
+.attribution {
+  margin-top: 100px;
+}
+span {
+  font-size: 15px;
+}
+/*===========================*/
+@media (max-width: 1190px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  .Box {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .box1 {
+    background-position: 90px 0px;
+  }
+  .box3 {
+    order: 1;
+  }
+}
